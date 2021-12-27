@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(require("./controller/route"));
 
 if (process.env.NODE_ENV == "production") {
-  app.use(express.static("assignment/build"));
+  app.use(express.static("client/build"));
 }
 
 app.listen(port, () => {
